@@ -1,0 +1,44 @@
+test
+----------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+Variable Container 
+----------------------------------------------------------------------------------------------------------
+    Variable Container Web UI
+        	Variable RTW_WebUI_Browser_Selection = Chrome; Visibility: All tests for this user
+        	Variable webui.report.showtraces = true; Visibility: All tests for this user
+----------------------------------------------------------------------------------------------------------
+Launch application: eu-hws-lnx25.nonprod.hclpnp.com:9443
+----------------------------------------------------------------------------------------------------------
+    Step: Click on Edit text whose Label is Username
+----------------------------------------------------------------------------------------------------------
+    Step: Enter value 'auto' in Edit text whose Label is Username
+----------------------------------------------------------------------------------------------------------
+    Step: Click on Password field whose Label is Password
+----------------------------------------------------------------------------------------------------------
+    Step: Enter value 'auto' in Password field whose Label is Password
+----------------------------------------------------------------------------------------------------------
+    Step: Click on Image button whose Content is Log in
+----------------------------------------------------------------------------------------------------------
+    Step: Click on Division whose Content is DesignWorkload DefinitionsManage Workload Definiti...n BrokerCreate Resource Groups on Broker
+----------------------------------------------------------------------------------------------------------
+    Step: Click on Division whose Content is Manage Workload Definitions located at position 2
+----------------------------------------------------------------------------------------------------------
+Delay:  100000 milliseconds
+----------------------------------------------------------------------------------------------------------
+In application: eu-hws-lnx25.nonprod.hclpnp.com:9443
+----------------------------------------------------------------------------------------------------------
+    Step: Window: 'SharedEngine [dwcadmin] (Distributed) - Workload Designer'
+----------------------------------------------------------------------------------------------------------
+        Step: Click on Division whose Content is Workload Designer Engine name SharedEngine [dwcadmin] (Distributed)
+----------------------------------------------------------------------------------------------------------
+        Step: Close browser window
+----------------------------------------------------------------------------------------------------------
+In application: eu-hws-lnx25.nonprod.hclpnp.com:9443
+----------------------------------------------------------------------------------------------------------
+    Step: Click on Division whose focusable is false containing Scalable vector graphic whose alt is user
+----------------------------------------------------------------------------------------------------------
+    Step: Click on Image button whose Content is Log out
+----------------------------------------------------------------------------------------------------------
+    Step: Close browser window
+----------------------------------------------------------------------------------------------------------
